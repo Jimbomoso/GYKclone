@@ -53,14 +53,36 @@ a {
   margin-left: .3em;
 }
 
-video {
-  width: 87%;
+.videoContainer {
+  float: left;
+  width: 85%;
 }
 
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
+video {
+  width: 100%;
+}
+
+.buttonContainer {
+  float: right;
+  width: 15%;
+}
+
+.button {
+  border: 1px solid red;
+  height: 157px;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+footer {
+  float: left;
+  bottom: 0;
+}
+
+
+
+
+
+
 
 
