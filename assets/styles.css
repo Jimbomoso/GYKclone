@@ -1,88 +1,138 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
-html,body {
-  margin: 0;
-  padding: .45%;
+html {
+  height: 100vh;
 }
 
-nav {
-  height: 100px;
-  padding: 1%;
+body {
+  margin: 1%;
+  padding: 3%;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 200px 250px auto;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.logo {
+  grid-column-start: 1;
+  border-right: 2px solid #dc005d;
+  padding-right: 125px;
+  margin-right: -5px;
+}
+
+.slogan {
+  grid-column-start: 2;
+  padding-left: 5px;
+  margin-left: 10px;
+  font-weight: bolder;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-start: auto;
+  justify-content: right;
   list-style: none;
 }
 
 li {
   display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.slogan, .logo {
-  float: left;
-}
-
-.logo {
-  padding-right: 1%;
-}
-
-.slogan {
-  border-left: 2px solid #dc005d;
-  padding-left: 1%;
-}
-
-.social {
-  float: right;
 }
 
 .fab {
-  color: rgba(51, 51, 51, 0.521);
-  font-size: 1.9em;
-  margin-left: .3em;
+  font-size: 2.2em;
+  color: rgba(51, 51, 51, 0.507);
+  letter-spacing: 15px;
 }
 
-.videoContainer {
-  float: left;
-  width: 85%;
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-video {
-  width: 100%;
+.videoHero {
+  display: grid;
+  grid-column-start: 1;
 }
 
-.buttonContainer {
-  float: right;
-  width: 15%;
+.sidebar {
+  display: grid;
+  grid-column-start: 2;
+  padding: 0 10px 0 20px;
 }
 
-.button {
-  border: 1px solid red;
-  height: 157px;
-  margin-bottom: 10%;
-  margin-left: 5%;
+button {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 15px;
 }
 
-footer {
-  float: left;
-  bottom: 0;
+.about {
+  background: #dc005d;
+}
+.work {
+  background: #a9217d;
+}
+.people {
+  background: #7e549d;
+}
+.news {
+  background: #578bc0;
+}
+.contact {
+  background: #3fb5db;
+  margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1555px) {
+  .content {
+    display: block;
+  }
+  .videoHero {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 1%;
+    padding: 0;
+  }
+}
 
+@media only screen and (max-width: 750px) {
+  .nav {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
 
-
-
-
-
-
+  }
+  .slogan {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  ul {
+    justify-content: center;
+    padding: 0;
+  }
+  .fab {
+    font-size: 1.5em;
+  }
+  .videoHero {
+    margin: 0 auto;
+  }
+  footer {
+    font-size: 12px;
+    text-align: center;
+  }
+}
