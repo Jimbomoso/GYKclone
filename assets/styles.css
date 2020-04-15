@@ -44,6 +44,10 @@ li {
   display: inline-block;
 }
 
+a:hover {
+  border: none;
+}
+
 .fab {
   font-size: 2.2em;
   color: rgba(51, 51, 51, 0.507);
@@ -70,23 +74,54 @@ button {
   font-size: 36px;
   color: white;
   margin-bottom: 15px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .about {
   background: #dc005d;
 }
+
+.about:hover {
+  background: #eee;
+  color: #dc005d;
+}
+
 .work {
   background: #a9217d;
 }
+
+.work:hover {
+  background: #eee;
+  color: #a9217d;
+}
+
 .people {
   background: #7e549d;
 }
+
+.people:hover {
+  background: #eee;
+  color: #7e549d;
+}
+
 .news {
   background: #578bc0;
 }
+
+.news:hover {
+  background: #eee;
+  color: #578bc0;
+}
+
 .contact {
   background: #3fb5db;
   margin-bottom: 0;
+}
+
+.contact:hover {
+  background: #eee;
+  color: #3fb5db;
 }
 
 @media only screen and (max-width: 1555px) {
@@ -114,7 +149,6 @@ button {
     padding: 0;
     display: block;
     text-align: center;
-
   }
   .slogan {
     margin: 0;
